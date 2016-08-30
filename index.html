@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Collab Canvas</title>
+
+        <link rel="stylesheet" href="./css/pure-min.css">
+        <link rel="stylesheet" href="./css/grids-responsive-min.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <div class="pure-g main">
+            <div class="pure-u-3-4" id="screen">
+            </div>
+            <div class="pure-u-1-4" id="edit">
+                <div class="pane">
+                    <h1>Hello</h1>
+                    <p>This is a visualization playground using the wonderful p5.js and p5.sound libraries!</p>
+                    <p>The top editor is the draw loop. The bottom will be executed once, before the draw loop.</p>
+                    <p>The variables rms, waveform, and spectrum, are all preset with the audio data.</p>
+                    <p>To share your creation, just copy the URL!</p>
+                    <p>
+                        <a class='button' href="/?webgl=true" onclick="enter()" class="toggle-button">enter 3d mode</a>
+                        <a class='button' href="/" onclick="enter()" class="toggle-button">enter 2d mode</a>
+
+                    </p>
+                    <p><button onclick="hide()">hide info</button>
+                    <p><a href="https://p5js.org/reference/">p5 reference</a></p>
+                    <p><a href="http://freemusicarchive.org/music/Kai_Engel/Irsens_Tale/Kai_Engel_-_Irsens_Tale_-_04_Moonlight_Reprise">Music by Kai Engel</a></p>
+                </div>
+                <div id="editor1">/* draw loop */</div>
+                <div id="editor2">/* constants */</div>
+            </div>
+        </div>
+
+
+        <script src="./js/ace.js"></script>
+        <script src="./js/mode-javascript.js"></script>
+        <script src="./js/theme-monokai.js"></script>
+
+        <script src="./js/p5.js"></script>
+        <script src="./js/p5.sound.js"></script>
+
+        <script src="./js/split.min.js"></script>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
