@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
         canvas.parent('screen');
 
         audio.loop();
-        fft = new p5.FFT(0.5);
+        fft = new p5.FFT(0.8);
         amplitude = new p5.Amplitude(0.5);
 
         fft.setInput(audio);
